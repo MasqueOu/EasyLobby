@@ -1,0 +1,7 @@
+main: be.maksxou.spigotmc.EasyLobby
+author: maksxou
+version: 2.0
+name: EasyLobby
+commands:
+  lobby:
+  hub:

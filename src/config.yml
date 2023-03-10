@@ -1,0 +1,17 @@
+main:
+  prefix: "&6[&c&lEasyLobby&r&6]"
+  player_need_permission_to_teleport: "true" # True = the player needs the permission to execute the /lobby command | False = the player doesn't need the permission to execute /lobby command.
+teleport:
+  message_on_teleport: "true" # True = Sends a message when the player use /lobby. | False = Doesn't send a message when the player use /lobby.
+message:
+  success_reloading_config: "&eThe configuration has been reloaded."
+  not_permission: "&cYou don't have permission to perform this command."
+  sender_is_not_player: "&cSorry! You must be a player to run this command."
+  command_doesnt_exist: "&cSorry! This command doesn't exist."
+  player_teleport: "&7You've just been teleported to the lobby server."
+  player_teleport_failed: "&cAn error has occurred."
+permission:
+  reload_plugin: "easylobby.command.reload" # Useless if you're operator on the server. | /lobby reload (reload the configuration)
+  lobby: "easylobby.command.lobby.use" # Useless if you're operator on the server. | /lobby (teleport to lobby server)
+server:
+  lobby: "bungeecord_server_name" # Place your lobby server name here

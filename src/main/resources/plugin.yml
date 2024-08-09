@@ -1,0 +1,7 @@
+main: com.masqueou.EasyLobby
+author: MasqueOu
+version: 3.0-RELEASE
+name: EasyLobby
+commands:
+  lobby:
+  hub:

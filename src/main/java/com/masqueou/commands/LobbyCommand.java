@@ -35,8 +35,7 @@ public class LobbyCommand implements CommandExecutor {
     }
 
     private void performPlayer(final Player player, final String serverName) {
-        if (this.easyLobby.getBoolean("settings.player_need_permission_to_teleport")
-                && !(player.isOp() || player.hasPermission(this.easyLobby.getString("settings.permission.lobby")))) {
+        if (this.easyLobby.getBoolean("settings.player_need_permission_to_teleport") && !(player.isOp() || player.hasPermission(this.easyLobby.getString("settings.permission.lobby")))) {
             player.sendMessage(this.easyLobby.getColoredMessage("settings.prefix") + " " + this.easyLobby.getColoredMessage("messages.not_enough_permission"));
             return;
         }
@@ -45,8 +44,7 @@ public class LobbyCommand implements CommandExecutor {
     }
 
     private void performReload(final Player player) {
-        if (this.easyLobby.getBoolean("settings.permission.reload_plugin")
-                && !(player.isOp() || player.hasPermission(this.easyLobby.getString("permission.lobby")))) {
+        if (!(player.isOp() || player.hasPermission(this.easyLobby.getString("settings.permission.reload_plugin")))) {
             player.sendMessage(this.easyLobby.getColoredMessage("settings.prefix") + " " + this.easyLobby.getColoredMessage("messages.not_enough_permission"));
             return;
         }

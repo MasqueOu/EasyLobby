@@ -1,14 +1,14 @@
 settings:
   # This is used to define the prefix, which will be displayed before each message sent by the plugin.
   prefix: '&6[&c&lEasyLobby&r&6]&r'
-  # true : The player must have the permission defined at 'permission.lobby' to be able to teleport.
-  # (DEFAULT) false : The player must not have permission defined at 'permission.lobby' to be able to teleport.
+  # true: The player must have the permission defined at 'permission.lobby' to be able to teleport.
+  # (DEFAULT) false: The player must not have permission defined at 'permission.lobby' to be able to teleport.
   player_need_permission_to_teleport: false
-  # (DEFAULT) true : The player will receive a message when teleporting, defined at 'messages.player_teleport'.
-  # false : The player will not receive a message when teleporting, defined at 'messages.player_teleport'.
+  # (DEFAULT) true: The player will receive a message when teleporting, defined at 'messages.player_teleport'.
+  # false: The player will not receive a message when teleporting, defined at 'messages.player_teleport'.
   message_on_teleport: true
   transfer-fallback:
-    # When enabled, players will receive a fallback message if transfer fails.
+    # When enabled, players will receive a fallback message if transfer fails. (DEFAULT: true)
     enabled: true
     # Delay (in seconds) before sending the fallback message.
     delay-seconds: 5

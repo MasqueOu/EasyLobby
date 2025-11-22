@@ -1,0 +1,36 @@
+settings:
+  # This is used to define the prefix, which will be displayed before each message sent by the plugin.
+  prefix: '&6[&c&lEasyLobby&r&6]&r'
+  # true : The player must have the permission defined at 'permission.lobby' to be able to teleport.
+  # (DEFAULT) false : The player must not have permission defined at 'permission.lobby' to be able to teleport.
+  player_need_permission_to_teleport: false
+  # (DEFAULT) true : The player will receive a message when teleporting, defined at 'messages.player_teleport'.
+  # false : The player will not receive a message when teleporting, defined at 'messages.player_teleport'.
+  message_on_teleport: true
+  transfer-fallback:
+    # When enabled, players will receive a fallback message if transfer fails.
+    enabled: true
+    # Delay (in seconds) before sending the fallback message.
+    delay-seconds: 5
+  permission:
+    # Permission which defines the permission required to perform the reload sub-command. (Operators bypass this permission natively.)
+    reload_plugin: 'elo.command.reload'
+    # Permission which defines the permission required to perform the teleportation command. (Operators bypass this permission natively.)
+    lobby: 'elo.command.lobby.use'
+  server:
+    # Allows you to define the name of your server. This name can be found in your BungeeCord configuration. Case-sensitive.
+    # As a reminder, this plugin doesn't allow you to define a spawn point.
+    lobby: 'replaceme'
+messages:
+  # Message received when reloading the configuration.
+  config_reloaded: '&eThe configuration has been reloaded.'
+  # Message received when the player does not have permission.
+  not_enough_permission: '&cYou dont have permission to perform this command.'
+  # Message received when the command is not executed by a player.
+  sender_is_not_a_player: '&cSorry! You must be a player to run this command.'
+  # Message received when the subcommand does not exist.
+  command_doesnt_exist: '&cSorry! This subcommand does not exist.'
+  # Message received when the player is teleported (refers to the parameter: 'settings.message_on_teleport'.)
+  player_teleport: '&7You have just been teleported to the lobby server.'
+  # Message received when the player is teleported and a teleportation problem occurs.
+  player_teleport_failed: '&cAn error occurred while teleporting you to the Lobby server. It may be temporarily unavailable. Please try again later.'

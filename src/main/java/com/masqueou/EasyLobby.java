@@ -20,9 +20,7 @@ public class EasyLobby extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getLogger().info("--------------------------------------------");
-        getLogger().info("EasyLobby by MasqueOu");
-        getLogger().info("--------------------------------------------");
+        getLogger().info("EasyLobby by MasqueOù is up and running :o!");
 
         this.initStats();
         this.proxyUtils = new ProxyUtils(this);

@@ -14,6 +14,6 @@ public class TransferFallbackListener implements Listener {
 
     @EventHandler
     public void onPlayerQuit(final PlayerQuitEvent event) {
-        this.easyLobby.getProxyUtils().markPlayerTransferred(event.getPlayer());
+        this.easyLobby.getProxyUtils().cancelTransferFallback(event.getPlayer().getUniqueId());
     }
 }
